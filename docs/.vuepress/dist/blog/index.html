@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress で技術ブログを作ってみた</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.70a1a69a.css" as="style"><link rel="preload" href="/assets/js/app.7b8b166f.js" as="script"><link rel="preload" href="/assets/js/2.4fe078de.js" as="script"><link rel="preload" href="/assets/js/6.073e6a68.js" as="script"><link rel="prefetch" href="/assets/js/3.600eead6.js"><link rel="prefetch" href="/assets/js/4.d57d47f1.js"><link rel="prefetch" href="/assets/js/5.a5650aa1.js"><link rel="prefetch" href="/assets/js/7.a4111e6f.js"><link rel="prefetch" href="/assets/js/8.32eeedf8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.70a1a69a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress-で技術ブログを作ってみた"><a href="#vuepress-で技術ブログを作ってみた" class="header-anchor">#</a> VuePress で技術ブログを作ってみた</h1> <p>自分用（と同じ問題にぶつかった誰かの参考）のために技術についてメモや、考えたことなどを書き溜めていくサイトを作りたいと前々から思っていたので、VuePress を使って作ってみました。</p> <p>目次
+</p><div class="table-of-contents"><ul><li><a href="#vuepress-とは">VuePress とは</a></li><li><a href="#なぜ-vuepress-を選んだか">なぜ VuePress を選んだか</a></li><li><a href="#基本的な導入手順">基本的な導入手順</a></li><li><a href="#機能を追加してみる">機能を追加してみる</a><ul><li><a href="#入れたい機能">入れたい機能</a></li></ul></li><li><a href="#つまづいた点">つまづいた点</a></li><li><a href="#運用してみて感じたこと">運用してみて感じたこと</a><ul><li><a href="#移行のしやすさについて">移行のしやすさについて</a></li></ul></li><li><a href="#参考にさせていただいたサイト">参考にさせていただいたサイト</a></li></ul></div><p></p> <h2 id="vuepress-とは"><a href="#vuepress-とは" class="header-anchor">#</a> VuePress とは</h2> <p><a href="https://vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">公式サイト<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="なぜ-vuepress-を選んだか"><a href="#なぜ-vuepress-を選んだか" class="header-anchor">#</a> なぜ VuePress を選んだか</h2> <h2 id="基本的な導入手順"><a href="#基本的な導入手順" class="header-anchor">#</a> 基本的な導入手順</h2> <div class="language-sh extra-class"><div class="highlight-lines"><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-sh"><code><span class="token comment"># install</span>
+<span class="token function">yarn</span> global <span class="token function">add</span> vuepress
+<span class="token comment"># OR npm install -g vuepress</span>
+
+<span class="token comment"># create a markdown file</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> README.md
+
+<span class="token comment"># start writing</span>
+vuepress dev
+
+<span class="token comment"># build to static files</span>
+vuepress build
+</code></pre></div><h2 id="機能を追加してみる"><a href="#機能を追加してみる" class="header-anchor">#</a> 機能を追加してみる</h2> <h3 id="入れたい機能"><a href="#入れたい機能" class="header-anchor">#</a> 入れたい機能</h3> <h4 id="最低限入れたい"><a href="#最低限入れたい" class="header-anchor">#</a> 最低限入れたい</h4> <ul><li>ページ内目次</li> <li>サイドバーにページ内目次表示</li> <li>日付（技術関連では重要）</li> <li>カテゴリ一覧</li> <li>CodePen のようなサンプルコードと実行結果表示</li> <li>SEO 関連
+<ul><li>Google Analytics</li></ul></li></ul> <h4 id="今後できれば入れたい"><a href="#今後できれば入れたい" class="header-anchor">#</a> 今後できれば入れたい</h4> <h2 id="つまづいた点"><a href="#つまづいた点" class="header-anchor">#</a> つまづいた点</h2> <p>ディレクトリ構造</p> <h2 id="運用してみて感じたこと"><a href="#運用してみて感じたこと" class="header-anchor">#</a> 運用してみて感じたこと</h2> <h3 id="移行のしやすさについて"><a href="#移行のしやすさについて" class="header-anchor">#</a> 移行のしやすさについて</h3> <p>TOC（目次）？</p> <h2 id="参考にさせていただいたサイト"><a href="#参考にさせていただいたサイト" class="header-anchor">#</a> 参考にさせていただいたサイト</h2></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7b8b166f.js" defer></script><script src="/assets/js/2.4fe078de.js" defer></script><script src="/assets/js/6.073e6a68.js" defer></script>
+  </body>
+</html>
