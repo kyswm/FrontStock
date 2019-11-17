@@ -1,17 +1,23 @@
 module.exports = {
+  plugins: ['@vuepress/blog'],
   locales: {
     '/': {
-      lang: 'ja'
+      lang: 'ja' // サイトの言語
     }
   },
-  //base: '/foo/',
-  title: 'Front Stock for better practice', // サイトのタイトル
-  description:
-    'Web制作,フロントエンドについて学んだことや考えをアウトプットするためのサイトです。', // サイトの説明明
+  // markdown: {
+  //   //mdファイル内のURLを自動でリンク化
+  //   extendMarkdown: md => {
+  //     md.set({ linkify: true });
+  //   }
+  // },
+  //base:
+  title: 'Front Stock', // サイトのタイトル
+  description: 'Webフロントエンド周りについて学んだことや考えのストック', // サイトの説明
   head: [
-    // head内に記載するタグ(サイト全体)
+    // head内に記載するタグ（サイト全体）
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-    ['meta', { name: 'og:url', content: 'https://example.com/' }],
+    ['meta', { name: 'og:url', content: 'https://mskyskw.com/' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: 'Front Stock' }],
     [
@@ -20,23 +26,29 @@ module.exports = {
     ],
     ['meta', { name: 'og:image', content: '/og.png' }]
   ],
+
   themeConfig: {
-    // サイトのテーマに関する設定、詳細は後述
-    logo: '/assets/img/logo.png',
+    // サイトのテーマに関する設定
+    logo: '/assets/svg/logo.svg',
     nav: [
       // ナビメニューに表示する項目
-      { text: 'Home', link: '/' },
-      { text: 'HTML', link: '/html/' },
-      { text: 'CSS', link: '/css/' },
-      { text: 'JS', link: '/js/' }
+      { text: 'Home ', link: '/' },
+      { text: 'About', link: '/about/' },
+      {
+        text: 'Posts',
+        items: [
+          { text: '全記事一覧', link: '/posts/' },
+          { text: 'HTML', link: '/posts/html/' },
+          { text: 'CSS', link: '/posts/css/' },
+          { text: 'JavaScript', link: '/posts/js/' },
+          { text: 'イベント', link: '/posts/events/' }
+        ]
+      },
+      { text: 'Twitter', link: 'https://twitter.com/kyswm' },
+      { text: 'GitHub', link: 'https://github.com/kyswm' },
+      { text: 'Instagram', link: 'https://www.instagram.com/kysw.m' }
     ],
-    sidebar: [
-      // サイドバーに表示する項目
-      '/html/',
-      '/css/',
-      '/js/'
-    ],
-    sidebarDepth: 2,
-    sidebar: 'auto'
+    sidebar: 'auto',
+    sidebarDepth: 2 // サイドバーに表示する階層
   }
 };

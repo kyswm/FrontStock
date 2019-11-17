@@ -1,21 +1,25 @@
 ---
 home: true
 
-<!-- heroImage: /logo.png active-->
+<!-- heroImage: /assets/img/logo.png-->
 
 <!-- actionText: About Front Stock
 actionLink: /index.html-->
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: © 2019 Front Stock.
+  - title: 心がけ・大切にしたいこと
+    details: ビジネスの主体、制作者、運用者、ユーザといったサイトに関わる全てのステークホルダーにとって快適なWeb制作
+  - title: 作り手として目指すこと
+    details: 「ベタープラクティス」− その都度、より良い方法・選択肢を用いれる制作者
+footer: © 2019 Front Stock by kyswm. Powered by VuePress
 ---
 
-# Hello VuePress
+## 記事一覧
 
-## みさきの技術ブログだよ
+[記事一覧はこちら](/posts/)
+
+## 運営者について
+
+kyswm
+
+[詳しくはこちら](/about/)
