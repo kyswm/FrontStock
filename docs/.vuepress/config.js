@@ -27,7 +27,8 @@ module.exports = {
         content: 'Webフロントエンド周りについて学んだことや考えのストック'
       }
     ],
-    ['meta', { name: 'og:image', content: '/assets/img/og.png' }]
+    ['meta', { name: 'og:image', content: '/assets/img/og.png' }][
+      ('meta', { name: 'twitter:card', content: 'summary' })
   ],
 
   themeConfig: {
