@@ -17,14 +17,17 @@ module.exports = {
   head: [
     // head内に記載するタグ（サイト全体）
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-    ['meta', { name: 'og:url', content: 'https://mskyskw.com/' }],
+    ['meta', { name: 'og:url', content: 'https://front-stock.com/' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: 'Front Stock' }],
     [
       'meta',
-      { name: 'og:description', content: 'VuePress で作成したサンプルサイト' }
+      {
+        name: 'og:description',
+        content: 'Webフロントエンド周りについて学んだことや考えのストック'
+      }
     ],
-    ['meta', { name: 'og:image', content: '/og.png' }]
+    ['meta', { name: 'og:image', content: '/assets/img/og.png' }]
   ],
 
   themeConfig: {
