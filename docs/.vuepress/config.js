@@ -49,8 +49,7 @@ module.exports = {
       },
       { text: 'Twitter', link: 'https://twitter.com/kyswm' },
       { text: 'GitHub', link: 'https://github.com/kyswm' },
-      { text: 'Instagram', link: 'https://www.instagram.com/kysw.m' }
-    ],
+      ],
     sidebar: 'auto',
     sidebarDepth: 2 // サイドバーに表示する階層
   }
